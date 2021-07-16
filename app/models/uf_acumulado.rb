@@ -8,5 +8,5 @@ class UfAcumulado
   field :casos_total, type: Integer
   field :mortes_total, type: Integer
 
-  embedded_in :dados_acumulado
+  embedded_in :dados_acumulados
 end
