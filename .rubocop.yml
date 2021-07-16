@@ -69,6 +69,9 @@ Rails/HttpPositionalArguments:
 Rails/HasAndBelongsToMany:
   Enabled: false
 
+Rails/WhereExists:
+  Enabled: false
+
 Style/AsciiComments:
   Enabled: false
 
