@@ -13,6 +13,10 @@ class DadosAcumuladosController < ApplicationController
   end
 
   private def set_search_date
-    @search_date = (Date.current - 1).to_s
+    @search_date = if params['date'].nil? || params['date'] == Date.current.to_s
+                     (Date.current - 1).to_s
+                   else
+                     params['date']
+                   end
   end
 end
